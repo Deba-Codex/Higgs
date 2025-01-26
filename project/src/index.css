@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes particle1 {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-200px, -200px) scale(0); opacity: 0; }
+}
+
+@keyframes particle2 {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(200px, -200px) scale(0); opacity: 0; }
+}
+
+@keyframes particle3 {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-200px, 200px) scale(0); opacity: 0; }
+}
+
+@keyframes particle4 {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(200px, 200px) scale(0); opacity: 0; }
+}
+
+@keyframes particle5 {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(0, -300px) scale(0); opacity: 0; }
+}
+
+.animate-particle1 { animation: particle1 1.5s ease-out forwards; }
+.animate-particle2 { animation: particle2 1.5s ease-out forwards; }
+.animate-particle3 { animation: particle3 1.5s ease-out forwards; }
+.animate-particle4 { animation: particle4 1.5s ease-out forwards; }
+.animate-particle5 { animation: particle5 1.5s ease-out forwards; }
