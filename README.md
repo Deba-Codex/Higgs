@@ -43,7 +43,15 @@ This website integrates **JSRoot, CERN datasets, and interactive UI elements** t
 ✅ **Personalized Video Showcase** – Highlights my research and self-produced physics visualizations.  
 ✅ **Expandable Future Support** – Placeholder for additional videos and interactive content. 
 
-![image](https://github.com/user-attachments/assets/47f8274d-ddc9-40d5-b5c2-da5a686a8bc2)
+
+
+https://github.com/user-attachments/assets/eb93a39b-73c8-48db-8574-b9f8403f96f0
+
+# Copyright Disclaimer ⚖️
+
+This video was created by **Debasish Dash (Deba-Codex)** 🎥 and is original content. It is not intended for any copyright infringement purposes. All rights to the video content, visuals, and associated materials are retained by the creator. 
+
+This video is provided for **educational**, **informational**, or **non-commercial** purposes only 📚.
 
 
 ### **4️⃣ Education Section**  
@@ -77,7 +85,6 @@ This website integrates **JSRoot, CERN datasets, and interactive UI elements** t
 | **CSS (Dark Theme, TailwindCSS)** | Custom styling & responsive UI |  
 | **Video.js / JW Player** | Advanced video playback features |  
 | **APIs (Twitter, CERN Open Data, YouTube, RSS Feeds)** | Blog content aggregation |  
-| **Google Analytics** | User tracking & insights |  
 
 ---
 
