@@ -242,9 +242,9 @@ export function Contact() {
                 transition={{ delay: 0.4 }}
               >
                 {[
-                  { icon: Github, link: 'https://github.com', color: 'hover:text-purple-400' },
-                  { icon: Linkedin, link: 'https://linkedin.com', color: 'hover:text-teal-400' },
-                  { icon: Mail, link: 'mailto:hello@example.com', color: 'hover:text-pink-400' }
+                  { icon: Github, link: 'https://github.com/Deba-Codex', color: 'hover:text-purple-400' },
+                  { icon: Linkedin, link: 'http://www.linkedin.com/in/debasish-dash-276638310', color: 'hover:text-teal-400' },
+                  { icon: Mail, link: 'mailto:debasishdash2616@gmail.com', color: 'hover:text-pink-400' }
                 ].map((social, index) => (
                   <motion.a
                     key={index}
