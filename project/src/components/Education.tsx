@@ -34,12 +34,12 @@ const resources = [
   {
     title: 'Data Formats & Analysis',
     description: 'Learn about NanoAOD and other CERN data formats.',
-    link: '#'
+    link: 'https://cms-opendata-workshop.github.io/workshop2024-lesson-exploring-cms-nanoaod/01-introduction.html'
   },
   {
     title: 'Computing Resources',
     description: 'Access to grid computing and analysis facilities.',
-    link: '#'
+    link: 'https://home.cern/science/computing/grid'
   }
 ];
 
