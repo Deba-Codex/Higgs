@@ -13,14 +13,14 @@ const ParticleBackground = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set initial dimensions
+    // Set canvas dimensions
     const setDimensions = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
     setDimensions();
 
-    // Particle class with safe canvas access
+    // Particle class
     class Particle {
       x: number;
       y: number;
@@ -44,7 +44,6 @@ const ParticleBackground = () => {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        // Use canvas from instance
         if (this.x > this.canvas.width) this.x = 0;
         if (this.x < 0) this.x = this.canvas.width;
         if (this.y > this.canvas.height) this.y = 0;
@@ -69,22 +68,18 @@ const ParticleBackground = () => {
 
     // Animation loop
     const animate = () => {
-      if (!ctx || !canvas) return;
-
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
       particles.forEach(particle => {
         particle.update();
         particle.draw(ctx);
       });
-      
       requestAnimationFrame(animate);
     };
 
     init();
     animate();
 
-    // Handle resize
+    // Handle window resize
     const handleResize = () => {
       setDimensions();
       particles.forEach(particle => {
@@ -97,35 +92,39 @@ const ParticleBackground = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return (
-    <canvas 
-      ref={canvasRef}
-      className="fixed inset-0 z-0 pointer-events-none"
-    />
-  );
+  return <canvas ref={canvasRef} className="fixed inset-0 z-0 pointer-events-none" />;
 };
 
 export function Contact() {
-  const formRef = useRef<HTMLFormElement>(null);
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isError, setIsError] = useState(false);
+
+  // EmailJS configuration (Replace these with your actual credentials)
+  const EMAILJS_CONFIG = {
+    SERVICE_ID: 'service_jgp82so',
+    TEMPLATE_ID: 'template_oczhtfk',
+    PUBLIC_KEY: 'lQiL1O4XiBg_NLQy6',
+    TO_NAME: 'Debasish' // Replace with your name
+  };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current!,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          to_name: EMAILJS_CONFIG.TO_NAME,
+          message: form.message,
+          reply_to: form.email
+        },
+        EMAILJS_CONFIG.PUBLIC_KEY
       );
 
       setForm({ name: '', email: '', message: '' });
@@ -139,9 +138,7 @@ export function Contact() {
     }
   };
 
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -160,15 +157,8 @@ export function Contact() {
               Let's Connect
             </h1>
 
-            <form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              className="space-y-6"
-            >
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-              >
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
                 <input
                   type="text"
                   name="name"
@@ -212,11 +202,7 @@ export function Contact() {
                 />
               </motion.div>
 
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                className="flex justify-center"
-              >
+              <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="flex justify-center">
                 <button
                   type="submit"
                   disabled={loading}
