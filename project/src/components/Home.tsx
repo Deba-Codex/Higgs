@@ -56,7 +56,7 @@ export function Home() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a
-              href="https://github.com/yourusername/your-repo"
+              href="https://github.com/Deba-Codex/Higgs_Insights"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 transition-colors"

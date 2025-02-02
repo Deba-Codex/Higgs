@@ -104,7 +104,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-4">
           <div className="flex space-x-6">
             <a
-              href="https://github.com/yourusername/your-repo"
+              href="https://github.com/Deba-Codex/Higgs_Insights"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-teal-400 transition-colors"
