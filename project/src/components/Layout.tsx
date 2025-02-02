@@ -44,7 +44,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   </Link>
                 ))}
                 <a
-                  href="https://github.com/yourusername/your-repo"
+                  href="https://github.com/Deba-Codex/Higgs_Insights"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2 transition-colors"
@@ -84,7 +84,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               ))}
               <a
-                href="https://github.com/yourusername/your-repo"
+                href="https://github.com/Deba-Codex/Higgs_Insights"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex items-center gap-2"
