@@ -2,8 +2,11 @@
 
 ---
 
-# **Higgs Insights: A Visual Journey into CERN Data**  
-🚀 **An interactive website showcasing CERN ROOT visualizations, high-energy physics data, and research insights into the Higgs boson decay.**  
+# **Higgs Insights: A Visual Journey into CERN Data** 🌌
+
+🚀 **An interactive website showcasing CERN ROOT visualizations, high-energy physics data, and research insights into the Higgs boson decay.**
+
+🔗 Visit the website: [Higgs Insights Website](<https://higgs.vercel.app/>)
 
 ![pixelcut-export](https://github.com/user-attachments/assets/04166553-4ba2-4b83-80cb-da48137e978e)
 
