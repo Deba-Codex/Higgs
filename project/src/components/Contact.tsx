@@ -104,7 +104,7 @@ export function Contact() {
   // EmailJS configuration (Replace these with your actual credentials)
   const EMAILJS_CONFIG = {
     SERVICE_ID: 'service_jgp82so',
-    TEMPLATE_ID: 'template_oczhtfk',
+    TEMPLATE_ID: 'template_yx1cy7j',
     PUBLIC_KEY: 'lQiL1O4XiBg_NLQy6',
     TO_NAME: 'Debasish' // Replace with your name
   };
