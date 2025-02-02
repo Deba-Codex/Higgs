@@ -15,22 +15,22 @@ const datasets = [
   {
     title: 'LHCb Beauty Mesons',
     description: 'Run 3 Preliminary',
-    link: '#'
+    link: 'https://home.cern/news/news/experiments/lhcb-presents-latest-study-beauty-oscillations'
   },
   {
     title: 'ALICE Heavy Ions',
     description: 'PbPb Collisions',
-    link: '#'
+    link: 'https://www.sciencedirect.com/science/article/abs/pii/S0375947414004515'
   },
   {
     title: 'Combined H→ZZ',
     description: 'Full Run 2 Analysis',
-    link: '#'
+    link: 'https://indico.cern.ch/event/442390/contributions/1096119/attachments/1289753/1920931/HiggsStrandberg.pdf'
   },
   {
     title: 'Exotic Searches',
     description: 'New Physics Results',
-    link: '#'
+    link: 'https://doi.org/10.1016/j.nuclphysbps.2024.10.003'
   }
 ];
 
