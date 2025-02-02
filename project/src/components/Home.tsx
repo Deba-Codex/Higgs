@@ -65,7 +65,11 @@ export function Home() {
       <div className="bg-gray-900 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-gray-800 p-6 rounded-lg">
+            {/* Interactive Visualizations */}
+            <Link
+              to="/visualizations"
+              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700/50 transition-colors"
+            >
               <div className="bg-teal-500/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <ChartBar className="h-6 w-6 text-teal-500" />
               </div>
@@ -73,9 +77,13 @@ export function Home() {
               <p className="text-gray-400">
                 Explore CERN ROOT data through dynamic, interactive plots with real-time filtering and analysis tools.
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-gray-800 p-6 rounded-lg">
+            {/* Higgs Boson Explorer */}
+            <Link
+              to="/explorer"
+              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700/50 transition-colors"
+            >
               <div className="bg-teal-500/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <AtomIcon className="h-6 w-6 text-teal-500" />
               </div>
@@ -83,9 +91,13 @@ export function Home() {
               <p className="text-gray-400">
                 Dive into 3D visualizations of Higgs boson decay events and understand particle interactions.
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-gray-800 p-6 rounded-lg">
+            {/* Educational Resources */}
+            <Link
+              to="/education"
+              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700/50 transition-colors"
+            >
               <div className="bg-teal-500/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <Brain className="h-6 w-6 text-teal-500" />
               </div>
@@ -93,9 +105,13 @@ export function Home() {
               <p className="text-gray-400">
                 Learn about particle physics, the ATLAS detector, and data analysis techniques.
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-gray-800 p-6 rounded-lg">
+            {/* Research Integration */}
+            <Link
+              to="/research"
+              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700/50 transition-colors"
+            >
               <div className="bg-teal-500/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <Database className="h-6 w-6 text-teal-500" />
               </div>
@@ -103,9 +119,13 @@ export function Home() {
               <p className="text-gray-400">
                 Access HepData records and DPHEP resources for comprehensive research analysis.
               </p>
-            </div>
+            </Link>
 
-            <div className="bg-gray-800 p-6 rounded-lg">
+            {/* Collaboration */}
+            <Link
+              to="/blog"
+              className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700/50 transition-colors"
+            >
               <div className="bg-teal-500/10 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <Users className="h-6 w-6 text-teal-500" />
               </div>
@@ -113,7 +133,7 @@ export function Home() {
               <p className="text-gray-400">
                 Connect with researchers and contribute to advancing particle physics visualization.
               </p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
